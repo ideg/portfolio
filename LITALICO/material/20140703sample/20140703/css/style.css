@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* template */
+body {
+  background-color: #f5fffa;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+a {
+  display: block;
+  color: #fff;
+}
+a:hover {
+  opacity: 0.5;
+}
+img {
+  display: block;
+  vertical-align: bottom;
+}
+#container {
+  width: 1020px;
+  margin: 0 auto;
+  /* background: url(../img/wireframe.png); */
+}
+
+/*  header */
+header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+header h1 {
+  display: none;
+}
+header p {
+  display: none;
+}
+.top {
+  position: absolute;
+  width: 915px;
+  top: 0;
+  left: 0;
+  padding: 20px 70px 0 35px;
+  overflow: hidden;
+}
+.top .logo {
+  float: left;
+  width: 180px;
+}
+nav {
+  width: 340px;
+  float: right;
+  font-size: 16px;
+}
+nav ul {
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+  margin-left: 30px;
+  line-height: 2;
+}
+/* main */
+div#main {
+  width: 790px;
+  margin: 0 auto;
+}
+/* aside */
+aside {
+  overflow: hidden;
+  margin-bottom: 76px;
+}
+aside .asideLogo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+aside .asideLogo img {
+  width: 464px;
+  margin: 0 auto;
+}
+.publicity {
+  float: left;
+  width: 230px;
+  margin-right: 50px
+}
+.last {
+  margin-right: 0px;
+}
+.publicity img {
+  margin-bottom: 12px;
+}
+.publicity  h3 {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+.publicity p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/*  article   */
+article h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+section {
+  overflow: hidden;
+  margin-bottom: 78px;
+}
+.sectionHead {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.sectionHead h2 {
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: -1px -1px 1px #575757;
+  border-bottom: solid 1px;
+  margin-bottom: 20px;
+}
+.sectionHead p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.2;
+}
+section .item {
+  float: left;
+  width: 230px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+section .item img {
+  margin-bottom: 10px;
+}
+section .item p {
+  font-size: 12px;
+  line-height: 1.2;
+}
+section .last {
+  margin-right: 0px;
+}
+
+
+/*  footer */
+.footerHead {
+  width: 100%;
+}
+.footerHead h2 {
+  width: 790px;
+  margin: 0 115px 0 115px;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: -1px -1px 1px #575757;
+  border-bottom: solid 1px;
+  margin-bottom: 20px;
+}
+.footerHead p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footerBottom {
+  width: 100%;
+  padding: 20px 0 10px 0;
+  background: #ccc;
+}
+.footerBottom img {
+  width: 276px;
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+small {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* go to top */
+.gototop {
+  position: fixed;
+  display: none;
+  bottom: 50px;
+  right: 50px;
+}
+.gototop a {
+  display: block;
+  width: 80px;
+  height: 60px;
+  margin: 0 2px 2px 0;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  background: -moz-linear-gradient(
+    top,
+    #ff2819 0%,
+    #ab0000);
+  background: -webkit-gradient(
+    linear, left top, left bottom,
+    from(#ff2819),
+    to(#ab0000));
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 2px rgba(255,255,255,0.7);
+  -webkit-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 2px rgba(255,255,255,0.7);
+  box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 2px rgba(255,255,255,0.7);
+  text-shadow:
+    0px -1px 0px rgba(000,000,000,0.4),
+    0px 1px 0px rgba(255,255,255,0.3);
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -webkit-transition: all 0.2s linear;
+}
+.gototop a:hover {
+  display: block;
+  width: 84px;
+  height: 64px;
+  font-size: 28px;
+  margin: 0;
+ }
+  

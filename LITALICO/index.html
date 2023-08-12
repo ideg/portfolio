@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Name</title>
+<link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<script type="text/javascript" src="js/respond.js"></script> 
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script type='text/javascript' src='js/jquery.bxslider.min.js'></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#slider').bxSlider({
+      auto: true,
+      pause: 4000,
+      speed: 1000,
+      mode: 'fade',
+      pager: false,
+      controls: false
+    });
+    $('.pagetop').click(function() {
+      $('body, html').delay(500).animate({ scrollTop: 0 }, 2000, 'easeOutQuart');
+    });
+    // walk and jump char
+    $('#char-anime5>div').on('oAnimationEnd mozAnimationEnd webkitAnimationEnd animationend', function() {
+      console.log('animated!');
+      if($('#char-anime5').hasClass('char-anime51c')) {
+        $('.char-anime51c').removeClass('char-anime51c').addClass('char-anime51b');
+        $('.char-anime52c').removeClass('char-anime52c').addClass('char-anime52b');
+        return false;
+      }
+      if($('#char-anime5').hasClass('char-anime51b')) {
+        $('.char-anime51b').removeClass('char-anime51b').addClass('char-anime51d');
+        $('.char-anime52b').removeClass('char-anime52b').addClass('char-anime52d');
+        return false; 
+      }
+      if($('#char-anime5').hasClass('char-anime51d')) {
+        $('.char-anime51d').removeClass('char-anime51d').addClass('char-anime51a');
+        $('.char-anime52d').removeClass('char-anime52d').addClass('char-anime52a');
+        return false; 
+      }
+      if($('#char-anime5').hasClass('char-anime51a')) {
+        $('.char-anime51a').removeClass('char-anime51a').addClass('char-anime51c');
+        $('.char-anime52a').removeClass('char-anime52a').addClass('char-anime52c');
+        return false; 
+      }
+    });
+    // pagetop button jump char
+    $('.pagetop>span').hover(function() {
+      $('#char-anime6').addClass('char-anime61a');
+      $('#char-anime6>div').addClass('char-anime62a');
+    }, function() {
+      $('#char-anime6').removeClass('char-anime61a');
+      $('#char-anime6>div').removeClass('char-anime62a');
+    });
+    $('.pagetop>span').click(function() {
+      $('#char-anime6').addClass('char-anime61b');
+      $('#char-anime6>div').addClass('char-anime62b');
+    });
+    $(window).scroll(function(){
+      $('#char-anime6').removeClass('char-anime61b');
+      $('#char-anime6>div').removeClass('char-anime62b');
+    });
+    // footer bottom char
+    $('#char-anime8>div').on('oAnimationEnd mozAnimationEnd webkitAnimationEnd animationend', function() {
+      console.log('animated!');
+      if($('#char-anime8').hasClass('char-anime81a')) {
+        $('.char-anime81a').removeClass('char-anime81a').addClass('char-anime81b');
+        $('.char-anime82a').removeClass('char-anime82a').addClass('char-anime82b');
+        return false;
+      }
+      if($('#char-anime8').hasClass('char-anime81b')) {
+        $('.char-anime81b').removeClass('char-anime81b').addClass('char-anime81a');
+        $('.char-anime82b').removeClass('char-anime82b').addClass('char-anime82a');
+        return false; 
+      }      
+    });
+  });
+</script>
+</head>
+<body>
+  <div id="wrap" class="home">
+    <article>
+      <header>
+        <nav>
+          <h1><a href="#">Campany Name</a></h1>
+          <ul class="main-nav">
+            <li><a class="nav-home" href="#">ホーム</a></li>
+            <li><a class="nav-about" href="#">会社情報</a></li>
+            <li><a class="nav-service" href="#">事業内容</a></li>
+            <li><a class="nav-vision" href="#">ビジョン</a></li>
+            <li><a class="nav-reporting" href="#">経営情報</a></li>
+            <li><a class="nav-recruit" href="#">採用情報</a></li>
+          </ul>
+          <ul class="sub-nav">
+            <li><a class="nav-sitemap" href="#">サイトマップ</a></li>
+            <li><a class="nav-contact" href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <ul class="slides" id="slider">
+          <li class="slide1"></li>
+          <li class="slide2"></li>
+          <li class="slide3"></li>
+          <li class="slide4"></li>
+          <li class="slide5"></li>
+          <li class="slide6"></li>
+          <li class="slide7"></li>
+        </ul>
+        <p class="announce"><strong><span class="txt-anime1">Old Company Name</span><span class="txt-anime2">は</span><span class="txt-anime3">New Company Nameへ</span></strong><span class="txt-anime4"></span></p>
+      </header>
+      <section class="service-area"><!-- SERVICE -->
+        <h2 class="service-h2">SERVICE Companyの事業</h2>
+        <div class="service-area-inner"><div>
+          <a><dl>
+            <dt class="service-logo1">Comanyの事業１</dt>
+            <dd class="service-figure"><img src="images/ServiceFigure1.jpg" alt="Comanyの事業１"></dd>
+            <dd class="service-txt">Companyの事業の説明文。<br>あいうえおあいうえお</dd>
+          </dl></a>
+          <a><dl>
+            <dt class="service-logo2">Comanyの事業２</dt>
+            <dd class="service-figure"><img src="images/ServiceFigure2.jpg" alt="Comanyの事業２"></dd>
+            <dd class="service-txt">Companyの事業の説明文。<br>あいうえおあいうえお</dd>
+          </dl></a>
+          <a><dl>
+            <dt class="service-logo3">Comanyの事業３</dt>
+            <dd class="service-figure"><img src="images/ServiceFigure3.jpg" alt="Comanyの事業３"></dd>
+            <dd class="service-txt">Companyの事業の説明文。<br>あいうえおあいうえお</dd>
+          </dl></a>
+          <a><dl>
+            <dt class="service-logo4">Comanyの事業４</dt>
+            <dd class="service-figure"><img src="images/ServiceFigure4.jpg" alt="Comanyの事業４"></dd>
+            <dd class="service-txt">Companyの事業の説明文。<br>あいうえおあいうえお</dd>
+          </dl></a>
+        </div></div>
+        <div class="char-anime char-anime3"></div>
+        <div class="char-anime char-anime41"><div class="char-anime42"></div></div>
+        <div id="char-anime5" class="char-anime char-anime51c"><div class="char-anime52c"></div></div>
+      <!-- SERVICE --></section>
+      <section class="vision-area"><!-- VISION -->
+        <h2 class="vision-h2">VISION Companyのビジョン</h2>
+        <a href="#"><figure>
+          <strong>Companyの<br>ビジョン説明</strong>
+          <span>詳しく読む</span>
+        </figure></a>
+        <p>Companyのビジョン補足説明文　あいうえお<br>Companyのビジョン補足説明文　あいうえおあいうえお<br>Companyのビジョン補足説明文　あいうえおあいうえおあいうえお</p>
+        <div class="char-gif char-gif01"><img src="images/GifChar1.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif02"><img src="images/GifChar2.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif03"><img src="images/GifChar3.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif04"><img src="images/GifChar4.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif05"><img src="images/GifChar5.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif06"><img src="images/GifChar6.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif07"><img src="images/GifChar7.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif08"><img src="images/GifChar8.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif09"><img src="images/GifChar9.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif10"><img src="images/GifChar10.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif11"><img src="images/GifChar11.gif" alt="アニメーション"></div>
+        <div class="char-gif char-gif12"><img src="images/GifChar12.gif" alt="アニメーション"></div>
+      <!-- VISION --></section>
+      <section class="partner-area"><!-- PARTNER -->
+        <div class="partner-area-inner">
+          <h2 class="partner-h2">PARTNER パートナー</h2>
+          <ul class="partner-list">
+            <li><a>
+              <figure><div><img src="images/PertnerPic1.jpg" alt="Partner1"></div>
+                <figcaption>Pertner1</figcaption>
+              </figure>
+              <p>パートナー企業の説明文<br>あいうえおあいうえお<br>あいうえおあいうえお</p>
+            </a></li>
+            <li><a>
+              <figure><div><img src="images/PertnerPic2.jpg" alt="Partner2"></div>
+                <figcaption>Pertner2</figcaption>
+              </figure>
+              <p>パートナー企業の説明文<br>あいうえおあいうえお<br>あいうえおあいうえお</p>
+            </a></li>
+            <li><a>
+              <figure><div><img src="images/PertnerPic3.jpg" alt="Partner3"></div>
+                <figcaption>Pertner2</figcaption>
+              </figure>
+              <p>パートナー企業の説明文<br>あいうえおあいうえお<br>あいうえおあいうえお</p>
+            </a></li>
+          </ul>
+        </div>
+        <div class="char-anime char-anime21"><div class="char-anime22"></div></div>
+        <div class="char-anime char-anime1"></div>
+      <!-- PARTNER --></section>
+    </article>
+    <aside class="news-area"><!-- NEWS -->
+      <h2 class="news-h2">NEWS 最新情報</h2>
+      <ul>
+        <li><a href="#">
+          <em>カテゴリー</em>
+          <span class="date">2014年07月10日</span>
+          <div><cite>最新情報のタイトル　あいうえおあいうえおあいうえおあいうえお</cite><ul class="tag-list"><li>タグ名</li><li>タグ名</li></ul></div>
+          <span class="details">詳しく読む</span>
+        </a></li>
+        <li><a href="#">
+          <em>カテゴリー</em>
+          <span class="date">2014年07月10日</span>
+          <div><cite>最新情報のタイトル　あいうえおあいうえおあいうえおあいうえおあいうえお</cite><ul class="tag-list"><li>タグ名</li></ul></div>
+          <span class="details">詳しく読む</span>
+        </a></li>
+        <li><a href="#">
+          <em>カテゴリー</em>
+          <span class="date">2014年07月10日</span>
+          <div><cite>最新情報のタイトル　あいうえおあいうえおあいうえおあいうえおあいうえお</cite><ul class="tag-list"><li>タグ名</li></ul></div>
+          <span class="details">詳しく読む</span>
+        </a></li>
+        <li><a href="#">
+          <em>カテゴリー</em>
+          <span class="date">2014年07月10日</span>
+          <div><cite>最新情報のタイトル　あいうえおあいうえおあいうえおあいうえおあいうえお</cite><ul class="tag-list"><li>タグ名</li></ul></div>
+          <span class="details">詳しく読む</span>
+        </a></li>
+        <li><a href="#">
+          <em>カテゴリー</em>
+          <span class="date">2014年07月10日</span>
+          <div><cite>最新情報のタイトル　あいうえおあいうえおあいうえおあいうえおあいうえお</cite><ul class="tag-list"><li>タグ名</li></ul></div>
+          <span class="details">詳しく読む</span>
+        </a></li>
+        <li><a href="#">
+          <em>カテゴリー</em>
+          <span class="date">2014年07月10日</span>
+          <div><cite>最新情報のタイトル　あいうえおあいうえおあいうえおあいうえおあいうえお</cite><ul class="tag-list"><li>タグ名</li></ul></div>
+          <span class="details">詳しく読む</span>
+        </a></li>
+        <li><a href="#">
+          <em>カテゴリー</em>
+          <span class="date">2014年07月10日</span>
+          <div><cite>最新情報のタイトル　あいうえおあいうえおあいうえおあいうえおあいうえお</cite><ul class="tag-list"><li>タグ名</li></ul></div>
+          <span class="details">詳しく読む</span>
+        </a></li>
+        <li><a href="#">
+          <em>カテゴリー</em>
+          <span class="date">2014年07月10日</span>
+          <div><cite>最新情報のタイトル　あいうえおあいうえおあいうえおあいうえおあいうえお</cite><ul class="tag-list"><li>タグ名</li></ul></div>
+          <span class="details">詳しく読む</span>
+        </a></li>
+      </ul>
+      <p class="news-list"><a href="#">最新情報一覧へ</a></p>
+    <!-- NEWS --></aside>
+    <footer>
+      <div class="footer-inner">
+        <h3><a href="#">ホーム</a></h3>
+        <ul class="footer-about">
+          <li>
+            <h4><a href="#">会社情報</a></h4>
+            <ul>
+              <li><a href="#" target="_blank">会社情報１</a></li>
+              <li><a href="#">会社情報２</a></li>
+              <li><a href="#">会社情報３</a></li>
+              <li><a href="#">会社情報４</a></li>
+              <li><a href="#">会社情報５</a></li>
+              <li><a href="#">会社情報６</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="footer-service">
+          <li>
+            <h4><a href="#">事業内容</a></h4>
+            <ul>
+              <li><a href="#">事業内容１</a></li>
+              <li><a href="#" target="_blank">事業内容２</a></li>
+              <li><a href="#">事業内容３</a></li>
+              <li><a href="#">事業内容４</a></li>
+              <li><a href="#">事業内容５</a></li>
+              <li><a href="#">事業内容６</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="footer-vision">
+          <li>
+            <h4><a href="#">ビジョン</a></h4>
+            <ul>
+              <li><a href="#">ビジョン１</a></li>
+              <li><a href="#">ビジョン２</a></li>
+              <li><a href="#" target="_blank">ビジョン３</a></li>
+              <li><a href="#">ビジョン４</a></li>
+              <li><a href="#">ビジョン５</a></li>
+              <li><a href="#">ビジョン６</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="footer-reporting">
+          <li>
+            <h4><a href="#">経営情報</a></h4>
+            <ul>
+              <li><a href="#">経営情報１</a></li>
+              <li><a href="#">経営情報２</a></li>
+              <li><a href="#">経営情報３</a></li>
+              <li><a href="#" target="_blank">経営情報４</a></li>
+              <li><a href="#">経営情報５</a></li>
+              <li><a href="#">経営情報６</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="footer-recruit">
+          <li>
+            <h4><a href="#">採用情報</a></h4>
+            <ul>
+              <li><a href="#">採用情報１</a></li>
+              <li><a href="#">採用情報２</a></li>
+              <li><a href="#">採用情報３</a></li>
+              <li><a href="#">採用情報４</a></li>
+              <li><a href="#" target="_blank">採用情報５</a></li>
+              <li><a href="#" target="_blank">採用情報６</a></li>
+            </ul>
+          </li>
+        </ul>
+      <!-- footer-inner --></div>
+      <div class="pagetop"><span></span></div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+        <nav>
+          <ul>
+            <li><a href="#">最新情報</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">障害者の表示について</a></li>
+            <li><a href="#">サイトマップ</a></li>
+           </ul>
+         </nav>
+         <small>COPYRIGHT &copy; CompanyName Inc ALL RIGHT RESERVED.</small>
+       </div>
+       <div id="char-anime6" class="char-anime"><div></div></div>
+       <div class="char-anime char-anime7"><div></div></div>
+       <div id="char-anime8" class="char-anime char-anime81a"><div class="char-anime82a"></div></div>
+      <!-- .footer-bottom --></div>
+    </footer>
+  </div>
+</body>
+</html>
