@@ -1,0 +1,349 @@
+@charset 'utf-8';
+
+
+/* 賞品紹介共通設定 */
+
+.popup-contents {
+	position:fixed;
+	_position:absolute; /* hack for IE6 */
+	z-index:2;
+	color:#fff;
+	background-color: #fcb131;
+	height: auto;
+	width: 890px;
+	padding: 40px;
+	text-align:left;
+	font-weight: bold;
+}
+
+.popup-contents a {
+	color:#fff;
+}
+
+.popup-content-left {
+	height: auto;
+	width: 360px;
+	float: left;
+	margin-right: 20px;
+	_overflow: hidden; /* for IE6 */
+}
+.popup-content-right {
+	height: auto;
+	width: 510px;
+	float: left;
+}
+
+.popup-title {
+	height: 40px;
+	width: 195px;
+	margin-bottom: 10px;
+}
+.popup-caption {
+	height: 40px;
+	width: 400px;
+	margin-bottom: 10px;
+}
+.popup-content-left p {
+	margin-bottom: 10px;
+}
+
+.popup-close {
+	background-image: url(../images/popup/popup_close.gif);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor:pointer;
+}
+.right-button {
+	background-image: url(../images/popup/popup_right_triangle.gif);
+	background-repeat: no-repeat;
+	background-position: center 250px;
+	height: 560px;
+	width: 40px;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	cursor:pointer;
+}
+.left-button {
+	background-image: url(../images/popup/popup_left_triangle.gif);
+	background-repeat: no-repeat;
+	background-position: center 250px;
+	height: 560px;
+	width: 40px;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	cursor:pointer;
+}
+/* 賞品紹介共通設定 end */
+
+/* 賞品１ */
+
+#popup-prize1-left {
+	height: 520px;
+	width: 400px;
+	float: left;
+	padding-right: 20px;
+	_overflow: hidden; /* for IE6 */
+}
+#popup-prize1-right {
+	height: 520px;
+	width: 470px;
+	float: left;
+}
+#popup-prize1-right a {
+	color:#fcb131;
+	font-size: 16px;
+	text-decoration:none;
+}
+
+/* 賞品１説明文設定 */
+#content-prize1-1 {
+	font-size: 16px;
+	width: 380px;
+	line-height: 1.5em;
+	padding-left: 20px;
+	margin-bottom: 15px;
+	float: left;
+	margin-right: 20px;
+}
+#content-prize1-2 {
+	font-size: 18px;
+	width: 380px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	line-height: 1.5em;
+}
+#content-prize1-3 {
+	float: left;
+	width: 190px;
+	margin-right: 10px;
+	line-height: 1.5em;
+}
+#content-prize1-4 {
+	float: left;
+	width: 190px;
+	margin-right: 10px;
+	line-height: 1.5em;
+}
+/* 賞品１説明文設定 end */
+
+/* 賞品１写真設定 */
+#prize1-towel1 {
+	float: left;
+	background-image: url(../images/popup/towel_2.gif);
+	background-repeat: no-repeat;
+	height: 116px;
+	width: 200px;
+	margin-bottom:25px;
+	margin-right:20px;
+	padding: 10px;
+}
+#prize1-towel3 {
+	float: left;
+	background-image: url(../images/popup/towel_3.gif);
+	background-repeat: no-repeat;
+	height: 116px;
+	width: 200px;
+	padding: 10px;
+	margin-bottom: 25px;
+}
+#prize1-towel2 {
+	background-image: url(../images/popup/towel_1.gif);
+	background-repeat: no-repeat;
+	height: 178px;
+	width: 300px;
+	margin-right: 70px;
+	margin-bottom: 25px;
+	margin-left: 70px;
+	padding: 10px;
+	clear: left;
+}
+#prize1-towel5 {
+	background-image: url(../images/popup/towel_5.gif);
+	background-repeat: no-repeat;
+	padding: 10px;
+	float: left;
+	height: 116px;
+	width: 200px;
+}
+#prize1-towel4 {
+	float: left;
+	background-image: url(../images/popup/towel_4.gif);
+	background-repeat: no-repeat;
+	height: 116px;
+	width: 200px;
+	margin-right: 20px;
+	padding: 10px;
+}
+/* 賞品１写真設定 end */
+/* 賞品１ end */
+
+/* 賞品２ */
+#content-prize2-1 {
+	font-size: 16px;
+	line-height: 1.8em;
+	margin-left: 0px;
+}
+#prize2-photo {
+	height: 309px;
+	width: 500px;
+	margin-bottom: 20px;
+}
+
+/* 賞品２仕様テーブル */
+.popup-content-right table caption {
+	font-weight:bold;
+}
+
+#prize2-table-left {
+	float: left;
+	width: 150px;
+	margin-right: 10px;
+	border: 2px solid #fff;
+
+}
+#prize2-table-left th {	
+	width:50px;
+	padding:5px;
+	border:solid 1px #fff;
+}
+#prize2-table-left td {	
+	padding:5px;
+	border:solid 1px #fff;
+}
+
+#prize2-table-right {
+	width: 340px;
+	border: 2px solid #fff;
+	float: left;
+}
+#prize2-table-right th {	
+	width:70px;
+	padding:5px;
+	border:solid 1px #fff;
+}
+
+#prize2-table-right td {	
+	padding:5px;
+	border:solid 1px #fff;
+}
+/* 賞品２仕様テーブル end */
+/* 賞品２ end */
+
+/* 賞品３ */
+#content-prize3-1 {
+	margin-left: 0px;
+	line-height: 1.4em;
+	letter-spacing: -1px;
+}
+#prize3-photo {
+	height: 309px;
+	width: 500px;
+	margin-bottom: 20px;
+}
+#prize3-table-left {
+	float: left;
+	width: 330px;
+	margin-right: 10px;
+	border: 2px solid #fff;
+}
+#prize3-table-right {
+	float: left;
+	width: 170px;
+	border: 2px solid #fff;
+}
+#prize3-table-left tr th {
+	width: 100px;
+	border: 1px solid #fff;
+}
+#prize3-table-left tr td {
+	border: 1px solid #fff;
+}
+#prize3-table-right tr th {
+	width: 60px;
+	border: 1px solid #fff;
+}
+#prize3-table-right tr td {
+	border: 1px solid #fff;
+}
+
+/* 賞品３ end */
+
+/* 対象製品 */
+#popup-product {
+	background-color: #0ca350;
+	padding: 40px;
+	height: auto;
+	width: 890px;
+}
+#popup-inquiry {
+	background-color: #0ca350;
+	padding: 40px;
+	height: auto;
+	width: 600px;
+	font-size: 16px;
+}
+
+#popup-product h3,
+#popup-inquiry h3 {
+	margin-right: 25px;
+	margin-bottom: 15px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#popup-product h4,
+#popup-inquiry h4 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#popup-product img {
+	position: absolute;
+	right: 50px;
+	top: 40px;
+	border:solid 3px #fff;
+}
+#popup-product p {
+		margin:5px 0;
+}
+#popup-inquiry p {
+	margin:10px 0 10px 25px;
+}
+#popup-product table {
+	border: solid 2px #fff;
+}
+#popup-product table tr th {
+	width: 330px;
+	padding:1px 4px;
+	border: solid 1px #fff;
+	font-weight: bold;
+}
+
+#popup-product table tr td {
+	padding:1px 4px;
+	border: solid 1px #fff;
+	font-weight: normal;
+}
+
+/* 対象製品 end */
+
+
+
+
+/* ポップアップグレーアウト背景 */
+#popup-background{
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for IE6 */
+	width:100%; height:100%;
+	top:0; left:0;
+	background:#000000;
+	z-index:1;
+}
+/* ポップアップグレーアウト背景 end */

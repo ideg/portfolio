@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>キャンペーン新規登録1/3 | コカ・コーラ　ロンドンオリンピック総計25万人にアタル！キャンペーン</title>
+<link href="css/new_entry.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/lib/validationEngine.jquery.css">
+<link rel="stylesheet" href="css/lib/jquery.jscrollpane.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="js/lib/jquery.mousewheel.js"></script>
+<script src="js/lib/jquery.jscrollpane.min.js"></script>
+<script src="js/lib/jquery.validationEngine.js" charset="utf-8"></script>
+<script src="js/lib/jquery.validationEngine-ja.js" charset="utf-8"></script>
+<script src="js/new_entry.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="contents-wrap">
+	<h1><a href="index.html">コカ・コーラ　ロンドンオリンピック総計25万人にアタル！</a></h1>
+  	<div class="contents">
+      <div id="entry-process"><img src="images/new_entry/entry_process.gif" alt="メールアドレスの入力 &lt; 登録情報の入力 &lt; 登録完了" width="600" height="40"></div>
+      <p>利用規約をご確認のうえ、登録用メールアドレスを入力し送信ボタンを押してください。<br>
+仮登録完了後に届く「新規登録メール」内のURL（アドレス）をクリックして、本登録の手続きを行ってください。</p>
+	<div id="agreement-button"><a href="agreement.html">利用規約</a></div>
+    <form id="entry-email">
+    	<div id="email-label">メールアドレス：</div>
+    	<input type="text" id="email" name="email" class="validate[required,custom[email]]" />
+        <div class="clearfix" id="buttons">
+          <div id="back-button"><a href="index.html">キャンペーントップページへ戻る</a></div>
+          <input type="submit" name="entry" id="entry" value="" />
+        </div>
+    </form>
+    <!-- .contents --></div>
+  <!-- .contents-wrap --></div>
+	
+	<div class="popup-contents-wrap" id="agreement-content">
+	<div class="popup-contents">
+    <h2>利用規約</h2>
+	<!-- .popup-contents --></div>
+	<div class="popup-close"></div>
+	<!-- .popup-contents-wrap --></div>
+	<div id="popup-background"></div>
+	
+</body>
+</html>

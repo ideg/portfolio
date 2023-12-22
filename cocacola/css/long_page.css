@@ -1,0 +1,278 @@
+@charset 'utf-8';
+@import url(reset_clear.css);
+ 
+/* 利用規約　応募要項　よくあるご質問　共通設定 */
+body {
+	color: #333;
+	font-family: Verdana, "メイリオ", "ＭＳ Ｐゴシック", "Osaka", sans-serif;
+	font-size: small;
+	line-height: 2em;
+	text-align: center; /*for IE6 Quirks */
+}
+html>body {
+	font-size: 14px; /* forModernBrowser */
+}
+html {
+	background-color: #080707;
+}
+.contents-wrap {
+	width: 960px;
+	margin: 0 auto;
+	background: url(../images/long_page/back_image.gif) repeat-y #FFF;
+	text-align: left; /* for IE6 Quirks */
+}
+.contents-wrap h1 {
+	width: 960px;
+	background-image: url(../images/long_page/campain_logo.gif);
+}
+.contents-wrap h1 a {
+	display: block;
+	height: 100px;
+	text-indent: -9999px;
+}
+
+/* コンテンツ全体 */
+.contents {
+	position: relative;
+	padding: 30px 80px;
+}
+.contents h2 {
+	background: url(../images/long_page/headline.gif) no-repeat left center;
+	padding-left: 30px;
+	margin-bottom: 25px;
+	font-size: 165%;
+	font-weight: bold;
+}
+
+/* コンテンツ全体 */
+
+/* 目次 */
+.contents li {
+	margin-bottom: 15px;
+}
+.contents li a {
+	padding-left: 15px;
+	color: #333;
+	background-image: url(../images/long_page/black_triangle2.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+.contents li a:hover {
+	text-decoration: underline;
+}
+.table-contents-wrap {
+	margin: 15px 30px;
+}
+.table-contents-left {
+	float: left;
+	width: 360px;
+	margin-right: 20px;
+}
+.table-contents-right {
+	float: left;
+	width: 360px;
+}
+/* 目次 end */
+
+/* セクション */
+.section {
+	margin: 45px 20px;
+}
+.section h3 {
+	margin-left: 0px;
+	margin-bottom: 20px;
+	padding-left: 5px;
+	font-size: 140%;
+	font-weight: bold;
+	line-height: 1;
+	border-left: solid 10px #e0051c;
+}
+.section h4 {
+	margin-top: 15px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+.section h4 + p {
+	margin-top: 5px;
+}
+.section h5 {
+	margin-top: 12px;
+	margin-left: 5px;
+}
+.section h5:before {
+	content: "・";
+}
+.section h5 + p {
+	margin-top: 5px;
+}
+
+.section p {
+	margin: 10px 20px;
+}
+.section ul {
+	margin: 10px 40px 10px 60px;
+	list-style-type: circle;
+}
+.section ul ol {
+	margin: 5px 0 5px 20px;
+}
+.section ol {
+	margin: 10px 40px 10px 60px;
+	list-style-type: decimal;
+}
+.section ol ul {
+	margin: 5px 0 5px 20px;
+}
+.section li {
+	margin-bottom: 5px;
+}
+.section table {
+	border: solid 2px #ccc;
+	font-size: 0.9em;
+	line-height: 1;
+}
+.section caption {
+	margin-bottom: 5px;
+	font-size: 1.2em;
+}
+.section th {
+	padding: 5px;
+	background-color: #eee;
+	border: solid 1px #ccc;
+}
+.section td {
+	padding: 5px;
+	border: solid 1px #ccc;
+}
+	
+.section-left,
+p.section-left
+ {
+	float: left;
+	width: 345px;
+	margin:5px 20px 5px 0;
+	padding-left: 20px;
+}
+.section-right,
+p.section-right
+ {
+	float: left;
+	width: 345px;
+	margin: 5px 0;
+	padding-right: 20px;
+}
+.section-center {
+	text-align: center;
+}
+.section-left table,
+.section-right table
+{
+	width: 345px;
+}
+
+
+
+.section dt {
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-left: 30px;
+	color: #000;
+	overflow: hidden;
+	height: 25px;
+	background: url(../images/long_page/triangle_slice.gif) no-repeat left bottom;
+	font-size: 1.1em;
+	line-height: 25px;
+}
+.section dd {
+	margin: 0 40px 20px 45px;
+}
+/* セクション end */
+
+/* キャンペーントップページボタン */
+.campain-top-button {
+	width: 240px;
+	margin: auto;
+}
+.campain-top-button a {
+	display: block;
+	height: 40px;
+	background-image: url(../images/long_page/campain_top_button.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+	text-indent: -9999px;
+}
+.campain-top-button a:active {
+	background-position: bottom;
+}
+/* キャンペーントップページボタン end */
+.sport {
+	float: right;
+	position: absolute;
+	right: 80px;
+	bottom: 20px;
+	margin-right: 40px;
+}
+
+/* ページトップボタン */
+#page-top-button {
+	position: absolute;
+/*	top: 100px;
+*/	right: 50px;
+}
+#page-top-button a {
+	display: block;
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+	height: 40px;
+	width: 40px;
+	text-indent: -9999px;
+	background-image: url(../images/long_page/page_top_button.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#page-top-button a:hover {
+	background-position: top;
+}
+/* ページトップボタン end */
+
+
+/* フッタ */
+.footer-wrap {
+	background-color: #080707;
+	text-align: center; /* for IE6 Quirks */
+}
+.footer {
+	width: 960px;
+	margin: 0 auto;
+	padding:20px 0;
+	text-align: right;
+}
+.footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+.footer li {
+	display: inline;
+	margin: 0 10px;
+	padding-left: 20px;
+	background: url(../images/top/small_black_white_triangle2.gif) no-repeat left center;
+}
+/* フッタ end */
+
+
+/* 利用規約　応募要項　よくあるご質問　共通設定 end */
+
+/* 利用規約 */
+#agreement {
+	bakcground-color: #314140;
+}
+/* 応募要項 */
+#entry-guideline {
+	background-color: #8C142A;
+}
+/* よくあるご質問 */
+#faq {
+	background-color: #00632D;
+}

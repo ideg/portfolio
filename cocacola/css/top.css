@@ -1,0 +1,312 @@
+@charset 'utf-8';
+
+@import url(reset_clear.css);
+
+/* 基本設定 */
+body {
+	color: #fff;
+	background-color: #a90812;
+	font-family: Verdana, "メイリオ", "ＭＳ Ｐゴシック", "Osaka", sans-serif;;
+	font-size: small;
+	text-align: center; /*for IE6 Quirks */
+}
+html>body {
+	font-size: 14px; /* forModernBrowser */
+}
+
+html {
+	background-color:#080707;
+}
+/* 基本設定 end */
+
+/* レイアウト */
+#top-wrap {
+	background-color: transparent;
+	margin: 0 auto;
+	width: 990px;
+	text-align: left;
+}
+
+.footer-wrap {
+	background-color:#080707;
+	text-align: center; /* for IE6 Quirks */
+}
+.footer {
+	margin:0 auto;
+	width:990px;
+	text-align: left; /* for IE6 Quirks */
+}
+/* レイアウト end */
+
+/* トップスタイル */
+.boxes {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	/*text-indent: -9999px;*/
+	display: block;
+	margin: 0px 5px 5px 0px;
+	float: left;
+}
+
+a.boxes,
+.boxes a  {
+	text-indent: -9999px;
+}
+#top-image {
+	display: block;
+	margin: 0px 5px 5px 0px;
+	height: 403px;
+	width: 765px;
+	float: left;
+}
+.boxes p {
+	text-indent: inherit;
+}
+#entry-button1 {
+	background-color: #047faf;
+	background-image: url(../images/top/entry_button1.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 63px;
+	width: 215px;
+}
+#login-box {
+	height: 189px;
+	width: 215px;
+}
+
+/*#login-button {
+	background-color: #e0051c;
+	background-image: url(../images/top/login.gif);
+	background-repeat: no-repeat;
+	height: 63px;
+	width: 215px;
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	top: 340px;
+	left: 0px;
+}*/
+#login-button {
+	background-color: #e0051c;
+	background-image: url(../images/top/login.gif);
+	background-repeat: no-repeat;
+	height: 63px;
+	width: 215px;
+	text-indent: -9999px;
+	display: block;
+	border: 0;
+	cursor: pointer;
+}
+#login-button-wrap {
+	background-image: url(../images/top/login.gif);
+	background-repeat: no-repeat;
+	height: 63px;
+	width: 215px;
+	position: absolute;
+	top: 340px;
+	left: 0px;
+}
+
+#prize1 {
+	background-color: #fcb131;
+	background-image: url(../images/top/prize1.gif);
+	height: 199px;
+	width: 325px;
+}
+#how-to-apply {
+	background-color: #ee2e4e;
+	background-image: url(../images/top/how_to_apply.gif);
+	height: 131px;
+	width: 545px;
+}
+#entry-login {
+	background: #080707;
+	height: 403px;
+	width: 215px;
+	position: relative;
+}
+#button-wrap1 {
+	height: 131px;
+	width: 215px;
+}
+#product {
+	background-color: #0ca350;
+	background-image: url(../images/top/product.gif);
+	height: 63px;
+	width: 215px;
+	margin-bottom: 5px;
+	text-indent: -9999px;
+	display: block;
+}
+#inquiry {
+	background-color: #0ca350;
+	background-image: url(../images/top/inquiry.gif);
+	text-indent: -9999px;
+	display: block;
+	height: 63px;
+	width: 215px;
+}
+#entry-box {
+	height: 68px;
+	width: 215px;
+}
+#prize2 {
+	background-color: #fcb131;
+	background-image: url(../images/top/prize2.gif);
+	height: 199px;
+	width: 325px;
+}
+#prize3 {
+	background-color: #fcb131;
+	background-image: url(../images/top/prize3.gif);
+	height: 199px;
+	width: 325px;
+}
+#entry_button2 {
+	display: block;
+	height: 131px;
+	width: 215px;
+	background-color: #047faf;
+	background-image: url(../images/top/entry_button2.gif);
+}
+#olympic-cheering-park {
+	background-color: #E0051C;
+	background-image: url(../images/top/olympic_cheering_park.gif);
+	display: block;
+	height: 131px;
+	width: 325px;
+}
+#youtube-coca-cola-channel {
+	background-color: #e0051c;
+	background-image: url(../images/top/youtube_coca_cola_channel.gif);
+	display: block;
+	height: 131px;
+	width: 325px;
+}
+#coca-cola-co-ltd {
+	background-color: #FFF;
+	background-image: url(../images/top/coca_cola_co_ltd.gif);
+	display: block;
+	height: 131px;
+	width: 105px;
+}
+#coca-cola-brand-site {
+	background-color: #fff;
+	background-image: url(../images/top/coca_cola_brand_site.gif);
+	display: block;
+	height: 131px;
+	width: 105px;
+}
+
+#coca-cola-zero {
+	background-color: #fff;
+	background-image: url(../images/top/coca_cola_zero.gif);
+	display: block;
+	height: 131px;
+	width: 105px;
+}
+
+/* トップスタイル end */
+
+/* フッタスタイル */
+.footer {
+	text-align: right;
+	padding:20px 0;
+}
+.footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+.footer li {
+	display: inline;
+	margin: 0 10px;
+	padding-left: 20px;
+	background: url(../images/top/small_black_white_triangle2.gif) no-repeat left center;
+}
+
+/* フッタスタイル end */
+
+/* 新規登録・ログイン　スタイル */
+#beginner {
+	background-image: url(../images/top/small_black_white_triangle.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+}
+#explanation {
+	font-size: 0.9em;
+	line-height: 1.1em;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+#membership {
+	background-image: url(../images/top/small_black_white_triangle.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 5px;
+	padding-left: 15px;
+}
+#login-name {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+#password {
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+#login-box input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border: 2px solid #CCC;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	font-weight: normal;
+}
+
+.text-form:focus {
+	background-color:#ffff99;
+}
+/* 新規登録・ログイン　スタイル end */
+
+/* デザイン */
+a:focus { 
+	overflow: hidden;	 /* for Firefox */
+	outline: solid 2px #fff;
+}
+
+a.boxes, 
+.boxes a,
+#entry-button1,
+#login-button {
+	background-position: top;
+}
+a.boxes:active,
+.boxes a:active,
+#entry-button1:active,
+#login-button:active {
+	background-position: bottom;
+	outline: none;
+}

@@ -1,0 +1,226 @@
+@charset 'utf-8';
+@import url(reset_clear.css);
+
+body {
+	color: #333;
+	background-color: #004b6a;
+	font-family: Verdana, "メイリオ", "ＭＳ Ｐゴシック", "Osaka", sans-serif;
+	font-size: small;
+	line-height: 2em;
+	text-align: center; /*for IE6 Quirks */
+}
+html>body {
+	font-size: 14px; /* forModernBrowser */
+}
+html {
+	background-color: #080707;
+}
+
+
+.contents-wrap {
+	width: 760px;
+	margin: 0 auto;
+	background: url(../images/new_entry/entry_background.gif) repeat-y #FFF;
+	text-align: left; /* for IE6 Quirks */
+}
+.contents-wrap h1 {
+	width: 700px;
+	margin:0 30px;
+	background-image: url(../images/new_entry/campain_logo2.jpg);
+}
+.contents-wrap h1 a {
+	display: block;
+	height: 85px;
+	text-indent: -9999px;
+}
+
+.contents {
+	width: 600px;
+	padding: 40px 80px;
+}
+.contents p {
+	margin: 5px 20px;
+}
+
+#entry-process {
+	height: 40px;
+	width: 600px;
+	margin-bottom: 20px;
+}
+
+/* 利用規約ボタン */
+#agreement-button {
+	width: 200px;
+	margin: 20px auto;
+}
+#agreement-button a {
+	background: url(../images/new_entry/agreement_button.gif) no-repeat top;
+	text-indent: -9999px;
+	display: block;
+	height: 40px;
+	overflow: hidden;
+}
+#agreement-button a:active {
+	background-position: bottom;
+}
+/* 利用規約ボタン end */
+
+/* email入力フォーム */
+#entry-email {
+	margin-top: 50px;
+}
+#email-label {
+	font: bold 16px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #666;
+	margin: 0px auto 5px 75px;
+}
+#email {
+	font: bold 24px/20px Arial, Helvetica, sans-serif;
+	color: #333;
+	border: 3px solid #ccc;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+	display: block;
+	width: 450px;
+	height: 35px;
+	line-height: 35px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#email:focus {
+	background-color: #ffff99;
+}
+
+/* フォームボタン */
+#buttons {
+	width: 300px;
+	margin: 50px auto;
+}
+/* 戻るボタン */
+#back-button {
+	float: left;
+	width: 140px;
+	margin-right: 20px;
+}
+#back-button a {
+	background: url(../images/new_entry/back_button.gif) no-repeat top;
+	text-indent: -9999px;
+	display: block;
+	height: 40px;
+	overflow: hidden;
+}
+#back-button a:active {
+	background-position: bottom;
+}
+	
+/* 送信ボタン */
+#entry {
+	float: left;
+    border: 0px;
+    width: 140px;
+    height: 40px;
+    background: url(../images/new_entry/submit_button.gif) no-repeat top;
+	cursor: pointer;
+}
+#entry:active {
+	background-position: bottom;
+}
+/* フォームボタン end */
+/* email入力フォーム end */
+
+/* ポップアップ */
+/* 利用規約ポップアップ */
+.popup-contents-wrap {
+	color: #fff;
+	width: 760px;
+	padding: 40px 0 40px 40px;
+	background-color: #047faf;
+	position:fixed;
+	_position:absolute; /* hack for IE6 */
+	z-index:2;
+	text-align:left;
+	font-weight: bold;
+}
+.popup-contents {
+	padding: 0px 10px 0px 0px;
+	width: 750px;
+	height: 500px;
+	overflow: auto;
+	overflow-y: scrol;
+	background-color: #047faf;
+}
+
+/* ポップアップコンテンツスクロールバー */
+.popup-contents .jspVerticalBar {
+    width: 40px;
+}
+.popup-contents .jspTrack {
+    background: #004b6a;
+}
+.popup-contents .jspDrag {
+    background: #82bfd7;
+}
+
+/* クローズボックス */
+.popup-close {
+	background-image: url(../images/popup/popup_close.gif);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor:pointer;
+}
+/* ポップアップグレーアウト背景 */
+#popup-background{
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for IE6 */
+	width:100%; height:100%;
+	top:0; left:0;
+	background:#000000;
+	z-index:1;
+}
+
+/* ポップアップデザイン */
+.popup-contents {
+	font-weight: normal;
+	font-size: 0.9em;
+}
+.popup-contents h2 {
+	margin: 10px 5px 20px 0;
+	padding-left: 1em;
+	border-left: solid 1em #fff;
+	font-size: 1.4em;
+	font-weight: bold;
+	line-height: 1;
+}
+.popup-contents h3 {
+	margin: 20px 5px 10px 0; 
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.popup-contents h4 {
+	margin: 10px 5px 5px 5px;
+	font-size: 1em;
+	font-weight: bold;
+}
+.popup-contents h5 {
+	margin: 5px 5px 0 5px;
+	font-size: 1em;
+}
+.popup-contents p {
+	margin: 5px 10px 10px 10px;
+}
+.popup-contents ul {
+	margin: 5px 10px 10px 25px;
+	list-style-type: circle;
+}
+.popup-contents ol {
+	margin: 5px 10px 10px 25px;
+	list-style-type: decimal;
+}
+
+/* ポップアップ end */
